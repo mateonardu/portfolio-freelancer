@@ -97,6 +97,20 @@
     }, 450);
   }
 
+  function playMobileIntro() {
+    /* Start showing "Después", sweep right to reveal "Antes",
+       then settle back left so content stays visible.    */
+    setPosition(2);
+
+    setTimeout(function () {
+      animateTo(2, 68, 1800, easeInOutCubic, function () {
+        setTimeout(function () {
+          animateTo(68, 18, 1000, easeOutCubic, null);
+        }, 600);
+      });
+    }, 450);
+  }
+
   /* ── Mouse interaction ──────────────────────────────── */
 
   container.addEventListener('mousedown', function (e) {
@@ -143,14 +157,12 @@
   /* Set the position synchronously before the first paint.     */
   setPosition(isMobile ? 2 : 80);
 
-  /* On mobile: stay at the left edge (Después visible by default).
-     On desktop: run the full intro sweep animation.            */
-  if (!isMobile) {
-    if (document.readyState === 'complete') {
-      setTimeout(playIntro, 120);
-    } else {
-      window.addEventListener('load', playIntro);
-    }
+  var intro = isMobile ? playMobileIntro : playIntro;
+
+  if (document.readyState === 'complete') {
+    setTimeout(intro, 120);
+  } else {
+    window.addEventListener('load', intro);
   }
 
 }());
