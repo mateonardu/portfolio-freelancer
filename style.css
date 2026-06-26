@@ -1069,6 +1069,18 @@ body {
   background: rgba(240, 237, 232, 0.04);
 }
 
+/* WhatsApp */
+.contact-link-wa {
+  border-color: rgba(37, 211, 102, 0.25);
+  color: rgba(37, 211, 102, 0.75);
+}
+
+.contact-link-wa:hover {
+  border-color: rgba(37, 211, 102, 0.55);
+  color: #25D366;
+  background: rgba(37, 211, 102, 0.06);
+}
+
 /* Links sin URL todavía */
 .contact-link-ph {
   opacity: 0.38;
@@ -1077,8 +1089,15 @@ body {
 }
 
 .contact-link-icon {
-  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
   line-height: 1;
+}
+
+.contact-link-icon svg {
+  width: 16px;
+  height: 16px;
 }
 
 @media (max-width: 480px) {
