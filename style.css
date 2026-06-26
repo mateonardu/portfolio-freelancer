@@ -930,3 +930,180 @@ body {
   .project-link { gap: 1rem; }
   .project-num { width: 1.75rem; }
 }
+
+
+/* ============================================================
+   STACK / SOBRE MÍ
+   ============================================================ */
+.about {
+  padding: 6rem 2rem 5rem;
+  border-top: 1px solid var(--border);
+}
+
+.about-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+}
+
+.about-para {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.72;
+}
+
+/* Stack list */
+.stack-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.stack-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.stack-tech {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.stack-role {
+  font-family: 'Courier New', monospace;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .about { padding: 4rem 1.25rem 3rem; }
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+
+/* ============================================================
+   CONTACTO
+   ============================================================ */
+.contact {
+  padding: 7rem 2rem 6rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.contact-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.contact-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.25rem, 5.5vw, 4.25rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--text);
+}
+
+.contact-title-accent {
+  color: var(--accent-light);
+}
+
+.contact-sub {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: -0.5rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8125rem 1.375rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.contact-link:hover {
+  border-color: rgba(240, 237, 232, 0.32);
+  color: var(--text);
+  background: rgba(240, 237, 232, 0.04);
+}
+
+/* Links sin URL todavía */
+.contact-link-ph {
+  opacity: 0.38;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.contact-link-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .contact { padding: 5rem 1.25rem 4rem; }
+  .contact-links { flex-direction: column; align-items: stretch; }
+  .contact-link { justify-content: center; }
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.375rem 2rem;
+  border-top: 1px solid var(--border);
+  font-family: 'Courier New', monospace;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  .footer { padding: 1.25rem; }
+}
