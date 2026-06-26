@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dev Fullstack Buenos Aires — sitios y apps que convierten visitantes en clientes.">
+  <meta name="theme-color" content="#0E0C0A">
+  <title>Mateo — Dev Fullstack Buenos Aires</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       NAV
+  ===================================================== -->
+  <nav class="nav" id="nav">
+    <a href="#inicio" class="nav-logo">MN</a>
+    <ul class="nav-links">
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ====================================================
+       HERO
+  ===================================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-glow"></div>
+
+    <div class="hero-content">
+
+      <span class="hero-kicker">Dev Fullstack · Buenos Aires</span>
+
+      <h1 class="hero-title">Tu negocio,<br>en la web.</h1>
+
+      <p class="hero-subtitle">
+        Construyo sitios y apps que convierten visitantes en clientes.
+      </p>
+
+      <!-- ================================================
+           BEFORE / AFTER SLIDER
+      ================================================= -->
+      <div class="slider-wrapper" id="sliderWrapper" role="img" aria-label="Comparación antes y después de tener sitio web">
+        <div class="slider-container" id="sliderContainer">
+
+          <!-- BEFORE panel -------------------------------- -->
+          <div class="slider-panel panel-before">
+            <span class="panel-label label-before">Antes</span>
+
+            <div class="panel-inner">
+              <!-- Left col: pain points -->
+              <div class="panel-col col-content">
+                <p class="panel-eyebrow">Sin web</p>
+                <ul class="pain-list">
+                  <li>
+                    <span class="list-icon x-icon">✗</span>
+                    Sin presencia online
+                  </li>
+                  <li>
+                    <span class="list-icon x-icon">✗</span>
+                    Clientes que se van
+                  </li>
+                  <li>
+                    <span class="list-icon x-icon">✗</span>
+                    Solo de 9 a 18hs
+                  </li>
+                  <li>
+                    <span class="list-icon x-icon">✗</span>
+                    Sin catálogo digital
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Right col: paper catalog mockup -->
+              <div class="panel-col col-decorative">
+                <div class="paper-mockup">
+                  <div class="paper-sheet">
+                    <div class="paper-line"></div>
+                    <div class="paper-line short"></div>
+                    <div class="paper-line"></div>
+                    <div class="paper-line shorter"></div>
+                    <div class="paper-img-placeholder"></div>
+                    <div class="paper-line short"></div>
+                  </div>
+                  <span class="paper-caption">Catálogo físico</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- /panel-before -->
+
+          <!-- AFTER panel --------------------------------- -->
+          <div class="slider-panel panel-after" id="panelAfter">
+            <span class="panel-label label-after">Después</span>
+
+            <div class="panel-inner">
+              <!-- Left col: browser mockup -->
+              <div class="panel-col col-decorative">
+                <div class="browser-mock">
+                  <div class="browser-chrome">
+                    <div class="traffic-lights">
+                      <span class="tl tl-red"></span>
+                      <span class="tl tl-yellow"></span>
+                      <span class="tl tl-green"></span>
+                    </div>
+                    <div class="address-bar">tunegocio.com</div>
+                  </div>
+                  <div class="browser-viewport">
+                    <div class="bv-nav">
+                      <div class="bv-logo-bar"></div>
+                      <div class="bv-nav-items">
+                        <span class="bv-ni"></span>
+                        <span class="bv-ni"></span>
+                        <span class="bv-ni"></span>
+                      </div>
+                    </div>
+                    <div class="bv-hero-block"></div>
+                    <div class="bv-content">
+                      <div class="bv-line"></div>
+                      <div class="bv-line short"></div>
+                    </div>
+                    <div class="bv-wa-btn">
+                      <span class="bv-wa-dot"></span>
+                      WhatsApp
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right col: metrics -->
+              <div class="panel-col col-content">
+                <p class="panel-eyebrow after-eyebrow">Con tu web</p>
+                <div class="metric-hero">
+                  <span class="metric-big-num">+127%</span>
+                  <span class="metric-big-label">consultas</span>
+                </div>
+                <ul class="win-list">
+                  <li>
+                    <span class="list-icon check-icon">◉</span>
+                    24/7 disponible
+                  </li>
+                  <li>
+                    <span class="list-icon wa-icon">●</span>
+                    WhatsApp integrado
+                  </li>
+                  <li>
+                    <span class="list-icon check-icon">◉</span>
+                    Presencia en Google
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /panel-after -->
+
+          <!-- DIVIDER ------------------------------------- -->
+          <div class="slider-divider" id="sliderDivider" aria-hidden="true">
+            <div class="divider-track"></div>
+            <div class="divider-handle" id="dividerHandle">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L3 12L9 6"  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 6L21 12L15 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+        </div><!-- /slider-container -->
+      </div><!-- /slider-wrapper -->
+
+      <!-- CTAs -->
+      <div class="hero-ctas">
+        <a href="#proyectos" class="btn btn-primary">Ver mi trabajo →</a>
+        <a href="#contacto" class="btn btn-secondary">Hablemos del proyecto</a>
+      </div>
+
+    </div><!-- /hero-content -->
+  </section>
+
+
+  <!-- ====================================================
+       TICKER
+  ===================================================== -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Landing Pages</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Apps a Medida</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">WhatsApp Integration</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">React + Node.js</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Diseño Responsivo</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Buenos Aires</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Remote</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Sitios que Venden</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Catálogos Digitales</span><span class="ticker-sep">◆</span>
+      <!-- duplicado para loop seamless -->
+      <span class="ticker-item">Landing Pages</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Apps a Medida</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">WhatsApp Integration</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">React + Node.js</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Diseño Responsivo</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Buenos Aires</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Remote</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Sitios que Venden</span><span class="ticker-sep">◆</span>
+      <span class="ticker-item">Catálogos Digitales</span><span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+
+  <!-- ====================================================
+       PROYECTOS
+  ===================================================== -->
+  <section class="projects" id="proyectos">
+    <div class="projects-inner">
+
+      <header class="section-header">
+        <span class="section-eyebrow">// proyectos</span>
+        <h2 class="section-title">Lo que construí.</h2>
+      </header>
+
+      <ol class="project-list">
+
+        <!-- 01 ─ GeoFab Argentina -->
+        <li class="project-row">
+          <a href="https://geofab.netlify.app" target="_blank" rel="noopener noreferrer"
+             class="project-link" aria-label="Ver GeoFab Argentina en vivo">
+            <span class="project-num">01</span>
+            <div class="project-body">
+              <div class="project-head">
+                <h3 class="project-name">GeoFab Argentina</h3>
+                <span class="project-badge badge-live">en vivo</span>
+              </div>
+              <p class="project-desc">
+                Landing para marca de geotextiles. Configurador de productos
+                interactivo e integración directa con WhatsApp.
+              </p>
+              <ul class="project-stack">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Tailwind</li>
+              </ul>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+
+        <!-- 02 ─ Calculadora Corte Láser (en desarrollo) -->
+        <li class="project-row project-wip">
+          <span class="project-num">02</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-name">Calculadora Corte Láser</h3>
+              <span class="project-badge badge-wip">en desarrollo</span>
+            </div>
+            <p class="project-desc">
+              App fullstack para empresa familiar. Reemplaza el seguimiento
+              en Excel con CRUD de materiales y cálculo automático de costos.
+            </p>
+            <ul class="project-stack">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <span class="project-arrow project-arrow-wip" aria-hidden="true">↗</span>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
