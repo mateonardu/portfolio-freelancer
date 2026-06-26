@@ -904,11 +904,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.125rem;
-  line-height: 1;
   color: var(--text-muted);
   transition: transform 0.28s ease, color 0.28s ease,
               background 0.28s ease, border-color 0.28s ease;
+}
+
+.project-arrow svg {
+  width: 16px;
+  height: 16px;
 }
 
 .project-row:hover .project-arrow:not(.project-arrow-wip) {
