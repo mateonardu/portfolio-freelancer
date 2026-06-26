@@ -138,15 +138,19 @@
 
   /* ── Init ───────────────────────────────────────────── */
 
-  /* Set the position synchronously so the CSS default (80%) is
-     reinforced before the first paint, avoiding any flash.     */
-  setPosition(80);
+  var isMobile = window.innerWidth <= 480;
 
-  /* Wait for full page load (fonts, etc.) before animating.    */
-  if (document.readyState === 'complete') {
-    setTimeout(playIntro, 120);
-  } else {
-    window.addEventListener('load', playIntro);
+  /* Set the position synchronously before the first paint.     */
+  setPosition(isMobile ? 2 : 80);
+
+  /* On mobile: stay at the left edge (Después visible by default).
+     On desktop: run the full intro sweep animation.            */
+  if (!isMobile) {
+    if (document.readyState === 'complete') {
+      setTimeout(playIntro, 120);
+    } else {
+      window.addEventListener('load', playIntro);
+    }
   }
 
 }());

@@ -676,6 +676,22 @@ body {
   .panel-inner { padding: 2.25rem 1.25rem 1rem; }
 
   .panel-col.col-content { flex: 1; }
+
+  /* Slider starts at left edge on mobile */
+  .panel-after {
+    clip-path: inset(0 0 0 2%);
+  }
+  .slider-divider {
+    left: 2%;
+  }
+
+  /* Push "Después" content to the right, under the label */
+  .panel-after .panel-inner {
+    justify-content: flex-end;
+  }
+  .panel-after .col-content {
+    flex: 0 0 54%;
+  }
 }
 
 
