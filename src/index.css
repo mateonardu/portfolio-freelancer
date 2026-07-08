@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta del diseño original */
+  --color-base: #e9e9ed;
+  --color-ink: #0a0a0f;
+  --color-brand: #3b4cca;
+  --color-brand-bright: #4557e8;
+  --color-paper: #f0f0f5;
+
+  /* Tipografías (Google Fonts) */
+  --font-anton: "Anton", sans-serif;
+  --font-archivo: "Archivo", system-ui, sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-syne: "Syne", sans-serif;
+
+  --animate-float: mn-float 5s ease-in-out infinite;
+
+  @keyframes mn-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-ink font-archivo antialiased;
+}
+
+::selection {
+  background: #3b4cca;
+  color: #fff;
+}
