@@ -127,7 +127,7 @@ export default function Projects() {
 
         {/* Estética Aura */}
         <article className="grid grid-cols-1 items-center gap-[clamp(20px,3vw,44px)] rounded-[22px] bg-ink p-[clamp(20px,3vw,40px)] text-paper transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[6px] hover:shadow-[0_30px_60px_-30px_rgba(59,76,202,0.55)] md:grid-cols-[0.95fr_1.05fr]">
-          <BrowserMockup url="template-turnos.vercel.app" name="Estética Aura" image={capturaAura} dark />
+          <BrowserMockup url="auraturnos.vercel.app" name="Estética Aura" image={capturaAura} dark />
           <div>
             <div className="mb-[18px] flex items-center gap-3">
               <span className="font-mono text-xs tracking-[0.08em] text-brand-bright">02</span>
@@ -149,13 +149,13 @@ export default function Projects() {
               <Tag dark>MercadoPago</Tag>
             </div>
             <a
-              href="https://template-turnos.vercel.app"
+              href="https://auraturnos.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-[9px] text-[15px] font-bold text-paper/85 transition-colors hover:text-brand-bright"
             >
               Ver template{' '}
-              <span className="font-mono text-xs text-paper/45">template-turnos.vercel.app</span>{' '}
+              <span className="font-mono text-xs text-paper/45">auraturnos.vercel.app</span>{' '}
               <span>↗</span>
             </a>
           </div>
